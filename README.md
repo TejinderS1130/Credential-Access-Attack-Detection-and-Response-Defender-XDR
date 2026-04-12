@@ -42,15 +42,15 @@ Threat was successfully detected, investigated, and contained with no further im
 ## Architecture
 
 ```text
-                                                Internet (Exploit Source)
-                                                        ↓
-                                                User Download Attempt
-                                                        ↓
-                                                Endpoint (Windows + Defender)
-                                                        ↓
-                                                Microsoft Defender XDR
-                                                        ↓
-                                  Detection → Investigation → Response → IOC Blocking
+Internet (Exploit Source)
+          ↓
+User Download Attempt
+          ↓
+Endpoint (Windows + Defender)
+          ↓
+Microsoft Defender XDR
+          ↓
+Detection → Investigation → Response → IOC Blocking
 ```
 
 ---
