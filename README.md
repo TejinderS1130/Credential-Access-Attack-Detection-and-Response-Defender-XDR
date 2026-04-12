@@ -1,4 +1,4 @@
-# Credential Access Attack Detection & Response (Defender XDR)
+# Enterprise Credential Access Attack Detection & Response (Microsoft Defender XDR)
 
 ![Microsoft Defender](https://img.shields.io/badge/Microsoft%20Defender-XDR-blue?style=for-the-badge&logo=microsoft)
 ![Attack Type](https://img.shields.io/badge/Attack-Credential%20Access-red?style=for-the-badge)
