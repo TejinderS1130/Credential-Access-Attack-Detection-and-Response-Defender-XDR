@@ -10,13 +10,24 @@
 ## Overview
 This project simulates a real-world **credential access attack** involving a malicious payload (**Mimikatz**) and demonstrates how a SOC analyst detects, investigates, and responds using Microsoft Defender XDR to achieve rapid containment and prevent further compromise.
 
-The attack lifecycle:
+The attack lifecycle includes:
 - Initial access via user download attempt  
 - Endpoint-level detection by Microsoft Defender  
 - Incident correlation in Defender XDR  
 - Threat validation using VirusTotal  
 - Containment and remediation actions  
 - Prevention through IOC blocking  
+
+---
+
+## Key Highlights
+
+- Real-world credential access attack simulation (Mimikatz)
+- Detection and response using Microsoft Defender XDR
+- Incident investigation using attack story and investigation graph
+- Threat validation with VirusTotal intelligence
+- Proactive threat hunting using KQL
+- IOC blocking and endpoint remediation
 
 ---
 
@@ -31,7 +42,7 @@ The attack lifecycle:
 7. Reviewed investigation graph to validate attack path and containment  
 8. Applied remediation actions and ensured IOC blocking was enforced
 
-This workflow reflects a real-world SOC investigation process, combining alert triage, threat validation, and proactive hunting.
+This workflow reflects a real-world SOC investigation process, combining alert triage, threat validation, and proactive threat hunting.
 
 **Outcome:**  
 Threat was successfully detected, investigated, and contained with no further impact to the environment.
@@ -191,7 +202,7 @@ The investigation graph visualizes relationships between key entities including 
 - The attack path is clearly mapped from source → file → device  
 
 **SOC Value:**  
-This provides a **correlated view of the attack chain**, allowing analysts to quickly understand origin, impact, and containment without manually analyzing logs.
+This provides a correlated view of the attack chain, allowing analysts to quickly understand the origin, impact, and containment of the threat.
 
 **Analyst Insight:**  
 The attack was successfully blocked at the endpoint, with no further propagation observed beyond the initial device.
@@ -285,9 +296,15 @@ BitLocker encryption was recommended to enhance data protection against potentia
 - Devices affected: 1  
 - Execution: Blocked  
 - Persistence: None  
-- Lateral Movement: None
+- Lateral Movement: None  
 - Detection Time: Near real-time  
-- Response Time: Immediate containment via Defender automation  
+- Response Time: Immediate containment via Defender automation    
+
+---
+
+## Detailed SOC Case Study
+
+👉 [View Full Incident Report](./reports/incident-report.md)
 
 ---
 
